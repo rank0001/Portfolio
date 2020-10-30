@@ -26,7 +26,6 @@ function App() {
         <Route exact path="/blogs" component={Blogs}/>
         <Route exact path='/about' component={About}/>
         <Route exact path="*" component={Error} />
-
       </Switch>
       </BrowserRouter>
     </React.Fragment>

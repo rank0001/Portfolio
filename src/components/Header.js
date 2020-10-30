@@ -5,7 +5,7 @@ import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 import Typed from "react-typed";
 import { makeStyles } from "@material-ui/core/styles";
-import myself from '../images/sakib2.png';
+import myself from '../images/sakib.jpg';
 
 const useStyles = makeStyles((theme) => ({
   avatar: {

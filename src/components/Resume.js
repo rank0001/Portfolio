@@ -5,7 +5,7 @@ import Box from "@material-ui/core/Box";
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
-    background: "#233",
+    background: "",
   },
   timeLine: {
     position: "relative",
@@ -114,22 +114,22 @@ const Resume = () => {
   return (
     <Box component="header" className={classes.mainContainer}>
       <Typography variant="h4" align="center" className={classes.heading}>
-        Working Experience
+        
       </Typography>
       <Box component="div" className={classes.timeLine}>
-        <Typography
+        {/* <Typography
           variant="h2"
           className={`${classes.timeLineYear} ${classes.timeLineItem}`}
         >
           2013
-        </Typography>
+        </Typography> */}
         <Box component="div" className={classes.timeLineItem}>
           <Typography
             variant="h5"
             align="center"
             className={classes.subHeading}
           >
-            web design
+            Technical Skills
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
             company name where worked
@@ -143,6 +143,10 @@ const Resume = () => {
             ipsa, laudantium totam perferendis possimus voluptatibus tenetur.
             Quasi voluptatibus, nam vitae eaque ad, officia laboriosam
             repudiandae, rerum necessitatibus nisi mollitia.
+
+  
+
+
           </Typography>
         </Box>
         <Typography

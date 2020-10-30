@@ -5,7 +5,7 @@ import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 import Typed from "react-typed";
 import { makeStyles } from "@material-ui/core/styles";
-import myself from '../images/sakib.jpg';
+import myself from '../images/sakib3.png';
 
 const useStyles = makeStyles((theme) => ({
   avatar: {
@@ -40,7 +40,7 @@ const Header = () => {
         <Avatar className={classes.avatar} src={myself} alt="Zubayer Ahmed" />
       </Grid>
       <Typography className={classes.title} variant="h4">
-        <Typed strings={["ZUBAYER AHMED"]} typeSpeed={60} />
+        <Typed strings={["Hello Recruiter,I am Zubayer and I want to work with you and you want to hire me because I am a dedicated, commited person with sheer will stacked with hot web development technologies such as react javascript express mongodb in short as mern stack "]} typeSpeed={30} />
       </Typography>
 
       <Typography className={classes.subtitle} variant="h5">
@@ -48,8 +48,7 @@ const Header = () => {
           strings={[
             "Junior Web Developer",
             "Javascript Lover",
-            "Machine Learning Enthusiast",
-            
+            "Machine Learning Enthusiast", 
           ]}
           typeSpeed={50}
           backSpeed={50}

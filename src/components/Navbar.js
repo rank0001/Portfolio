@@ -99,6 +99,9 @@ const Navbar = () => {
             <Typography variant="h5" className={classes.title}>
               Portfolio Of Zubayer Ahmed
             </Typography>
+            <Typography variant="h5" className={classes.title} align='right' style={{marginLeft:'30px',cursor:'pointer'}} onClick={()=>setOpen(true)}>
+              Click to know more about me
+            </Typography>
           </Toolbar>
         </AppBar>
       </Box>

@@ -8,6 +8,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import myself from "../images/sakib3.png";
 import { Button } from "@material-ui/core";
 
+
 const useStyles = makeStyles((theme) => ({
 	avatar: {
 		width: theme.spacing(25),
@@ -29,6 +30,9 @@ const useStyles = makeStyles((theme) => ({
 		width: "100vw",
 		textAlign: "center",
 		zIndex: 1,
+		 [theme.breakpoints.down('sm')]: {
+            top:'70%',       
+    },
 	},
 }));
 
@@ -40,16 +44,16 @@ const Header = () => {
 			<Grid container justify="center">
 				<Avatar className={classes.avatar} src={myself} alt="Zubayer Ahmed" />
 			</Grid>
-			<Typography className={classes.title} variant="h4">
+			<Typography className={classes.title} variant="h5">
 				<Typed
 					strings={[
-						"Hello Recruiter,I am Zubayer.A passionate web developer.Let's Work together"
+						"Hello Recruiter,I am Zubayer.A passionate web developer.Let's work together"
 					]}
 					typeSpeed={30}
 				/>
 			</Typography>
 
-			<Typography className={classes.subtitle} variant="h5">
+			<Typography className={classes.subtitle} variant="h6">
 				<Typed
 					strings={[
 						"Junior Web Developer",
@@ -65,7 +69,10 @@ const Header = () => {
 			<Button variant="contained" color="primary" onClick={()=>window.location="https://drive.google.com/file/d/1VmTfUOm5u13o3RMmiaz1RmO5D34S20US/view?usp=sharing"} style={{marginTop:'10px'}}>
 				Download my Resume
 			</Button>
+      
+      
 		</Box>
+    
 	);
 };
 

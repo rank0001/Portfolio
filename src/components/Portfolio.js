@@ -9,6 +9,7 @@ const useStyles = makeStyles((theme) => ({
 	mainContainer: {
 		background: "#233",
 		height: "100%",
+		marginTop:"50px"
 	},
 	cardContainer: {
 		maxWidth: 345,

@@ -10,10 +10,11 @@ const useStyles = makeStyles((theme) => ({
 		background: "#233",
 		height: "100vh",
 		overflowX: "hidden",
+		
 	},
     grid:{
         padding:theme.spacing(10),
-    
+		marginTop:'100px'
     },
     image:{
         

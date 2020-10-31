@@ -12,6 +12,7 @@ const useStyles = makeStyles((theme) => ({
 		background: "#233",
 		height: "100vh",
 		overflowX: "hidden",
+		
 	},
 	paper: {
 		padding: theme.spacing(2),
@@ -39,7 +40,7 @@ export default function Blogs() {
 			<Typography
 				variant="h4"
 				align="center"
-				style={{ color: "tomato", marginTop: "30px", marginBottom: "20px" }}
+				style={{ color: "tomato", marginTop: "100px", marginBottom: "20px" }}
 			>
 				My Blogs
 			</Typography>

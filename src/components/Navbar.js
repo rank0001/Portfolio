@@ -11,7 +11,6 @@ import ListItemText from "@material-ui/core/ListItemText";
 import Avatar from "@material-ui/core/Avatar";
 import Divider from "@material-ui/core/Divider";
 import Typography from "@material-ui/core/Typography";
-import AppsIcon from "@material-ui/icons/Apps";
 import AssignmentInd from "@material-ui/icons/AssignmentInd";
 import Home from "@material-ui/icons/Home";
 import MenuIcon from "@material-ui/icons/Menu";
@@ -63,12 +62,12 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const menuItems = [
-	{ listIcon: <Home />, listText: "Home", listPath: "/" },
-	{ listIcon: <AssignmentInd />, listText: "Resume", listPath: "/resume" },
-	{ listIcon: <Apps />, listText: "Portfolio", listPath: "/portfolio" },
-	{ listIcon: <ContactMail />, listText: "Contact", listPath: "/contact" },
-	{ listIcon: <CreateIcon />, listText: "Articles", listPath: "/blogs" },
-	{ listIcon: <InfoIcon />, listText: "About Myself", listPath: "/about" },
+	{ listIcon: <Home/>, listText: "Home", listPath: "/" },
+	{ listIcon: <AssignmentInd/>, listText: "Resume", listPath: "/resume" },
+	{ listIcon: <Apps/>, listText: "Portfolio", listPath: "/portfolio" },
+	{ listIcon: <ContactMail/>, listText: "Contact", listPath: "/contact" },
+	{ listIcon: <CreateIcon/>, listText: "Articles", listPath: "/blogs" },
+	{ listIcon: <InfoIcon/>, listText: "About Myself", listPath: "/about" },
 ];
 
 const Navbar = () => {
@@ -106,7 +105,7 @@ const Navbar = () => {
 	return (
 		<React.Fragment>
 			<Box component="nav">
-				<AppBar position="static" className={classes.appbar}>
+				<AppBar position="fixed" className={classes.appbar}>
 					<Toolbar>
 						<Typography variant="body1" style={{ flexGrow: "1", color: "tan" }}>
 							Portfolio of Zubayer Ahmed
@@ -128,6 +127,25 @@ const Navbar = () => {
 								onClick={() => history.push("/")}
 							>
 								Home
+							</Typography>
+						)}
+
+            {location.pathname === "/resume" ? (
+							<Typography
+								variant="h6"
+								className={classes.title}
+								style={{ borderBottom: "2px solid tomato" }}
+								onClick={() => history.push("/resume")}
+							>
+								Resume
+							</Typography>
+						) : (
+							<Typography
+								variant="h6"
+								className={classes.title}
+								onClick={() => history.push("/resume")}
+							>
+								Resume
 							</Typography>
 						)}
 						{location.pathname === "/portfolio" ? (
@@ -167,7 +185,6 @@ const Navbar = () => {
 								About
 							</Typography>
 						)}
-					
 						
             {location.pathname === "/contact" ? (
 							<Typography
@@ -187,8 +204,6 @@ const Navbar = () => {
 								Contact
 							</Typography>
 						)}
-
-
 						
             {location.pathname === "/blogs" ? (
 							<Typography

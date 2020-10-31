@@ -22,6 +22,7 @@ import CreateIcon from "@material-ui/icons/Create";
 import InfoIcon from "@material-ui/icons/Info";
 import Footer from "../components/Footer";
 import { IconButton } from "@material-ui/core";
+import myPic from "../images/sakibCartoon.jpg";
 
 const useStyles = makeStyles((theme) => ({
 	appbar: {
@@ -32,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
 		color: "tomato",
 		fontSize: 30,
 		[theme.breakpoints.down("sm")]: {
-			marginRight: "100px",
+			marginRight: "50px",
 			fontSize: 60,
 		},
 	},
@@ -107,7 +108,11 @@ const Navbar = () => {
 			<Box component="nav">
 				<AppBar position="fixed" className={classes.appbar}>
 					<Toolbar>
-						<Typography variant="body1" style={{ flexGrow: "1", color: "tan" }}>
+						<Avatar alt="Remy Sharp" src={myPic} />
+						<Typography
+							variant="body1"
+							style={{ flexGrow: "1", color: "tan", marginLeft: "10px" }}
+						>
 							Portfolio of Zubayer Ahmed
 						</Typography>
 
@@ -187,23 +192,26 @@ const Navbar = () => {
 
 						{location.pathname === "/about" ? (
 							<Typography
-              	component={Link}
+								component={Link}
 								to="/about"
 								variant="h6"
 								className={classes.title}
-								style={{ borderBottom: "2px solid tomato",textDecoration: "none"  }}
+								style={{
+									borderBottom: "2px solid tomato",
+									textDecoration: "none",
+								}}
 								onClick={() => history.push("/about")}
 							>
 								About
 							</Typography>
 						) : (
 							<Typography
-              	component={Link}
+								component={Link}
 								to="/about"
 								variant="h6"
 								className={classes.title}
 								onClick={() => history.push("/about")}
-                		style={{ textDecoration: "none" }}
+								style={{ textDecoration: "none" }}
 							>
 								About
 							</Typography>
@@ -211,23 +219,26 @@ const Navbar = () => {
 
 						{location.pathname === "/contact" ? (
 							<Typography
-              	component={Link}
+								component={Link}
 								to="/contact"
 								variant="h6"
 								className={classes.title}
-								style={{ borderBottom: "2px solid tomato",textDecoration: "none" }}
+								style={{
+									borderBottom: "2px solid tomato",
+									textDecoration: "none",
+								}}
 								onClick={() => history.push("/contact")}
 							>
 								Contact
 							</Typography>
 						) : (
 							<Typography
-              	component={Link}
+								component={Link}
 								to="/contact"
 								variant="h6"
 								className={classes.title}
 								onClick={() => history.push("/contact")}
-                style={{ textDecoration: "none" }}
+								style={{ textDecoration: "none" }}
 							>
 								Contact
 							</Typography>
@@ -235,24 +246,26 @@ const Navbar = () => {
 
 						{location.pathname === "/blogs" ? (
 							<Typography
-              	component={Link}
+								component={Link}
 								to="/blogs"
 								variant="h6"
 								className={classes.title}
-								style={{ borderBottom: "2px solid tomato",textDecoration: "none"  }}
+								style={{
+									borderBottom: "2px solid tomato",
+									textDecoration: "none",
+								}}
 								onClick={() => history.push("/blogs")}
-              
 							>
 								Articles
 							</Typography>
 						) : (
 							<Typography
-              	component={Link}
+								component={Link}
 								to="/blogs"
 								variant="h6"
 								className={classes.title}
 								onClick={() => history.push("/blogs")}
-                style={{ textDecoration: "none" }}
+								style={{ textDecoration: "none" }}
 							>
 								Articles
 							</Typography>

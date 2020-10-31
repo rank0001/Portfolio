@@ -175,13 +175,15 @@ const Resume = () => {
 					>
 						Academic Qualification
 					</Typography>
-				
+
 					<Typography
 						variant="subtitle1"
 						align="center"
 						className={classes.subtitle1}
 					>
-          Currently studying as an Information & Communication Engineer(3rd year) in Pabna University Of Sciency & Technology holding a CGPA of 3.36 out of 4.00.
+						Currently studying as an Information & Communication Engineer(3rd
+						year) in Pabna University Of Sciency & Technology holding a CGPA of
+						3.36 out of 4.00.
 					</Typography>
 				</Box>
 				<Box component="div" className={classes.timeLineItem}>
@@ -196,10 +198,11 @@ const Resume = () => {
 						variant="subtitle1"
 						align="center"
 						className={classes.subtitle1}
-					> 
-          Interests:traveling,leadership programs,vlogging,gathering with childhood friends to reminisce old stuffs
-          <br/>
-          Hobbies:reading novels,playing guitar,watching great films 
+					>
+						Interests:traveling,leadership programs,vlogging,gathering with
+						childhood friends to reminisce old stuffs
+						<br />
+						Hobbies:reading novels,playing guitar,watching great films
 					</Typography>
 				</Box>
 			</Box>

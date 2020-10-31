@@ -25,15 +25,18 @@ const useStyles = makeStyles((theme) => ({
 	},
 
 	contact: {
-		marginTop: "1800px",
+		marginTop: "1900px",
 		position: "absolute",
 		//top: "50%",
 		left: "15%",
 		width: "75vw",
 		zIndex: "1",
 		height: "100vh",
+		[theme.breakpoints.down("md")]: {
+			marginTop: "2500px",
+		},
 		[theme.breakpoints.down("sm")]: {
-			marginTop: "4200px",
+			marginTop: "4300px",
 		},
 	},
 
@@ -44,11 +47,18 @@ const useStyles = makeStyles((theme) => ({
 	},
 	title: {
 		color: "tomato",
+		marginBottom: "5px",
+		[theme.breakpoints.down("sm")]: {
+			fontSize: "20px",
+		},
 	},
 	subtitle: {
 		color: "tan",
 		textTransform: "uppercase",
 		marginBottom: "27px",
+		[theme.breakpoints.down("sm")]: {
+			fontSize: "15px",
+		},
 	},
 	typedContainer: {
 		position: "absolute",
@@ -64,6 +74,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 	gridContainer: {
 		position: "absolute",
+		zIndex: 1,
 	},
 }));
 
@@ -79,7 +90,7 @@ const Header = () => {
 				<Typography className={classes.title} variant="h5">
 					<Typed
 						strings={[
-							"Hello Recruiter,I am Zubayer.A passionate web developer.Let's work together",
+							"Hello Recruiter,I am Zubayer.A passionate web developer looking for an opportunity to prove my caliber.Let's work together",
 						]}
 						typeSpeed={30}
 					/>
@@ -88,12 +99,13 @@ const Header = () => {
 				<Typography className={classes.subtitle} variant="h6">
 					<Typed
 						strings={[
-							"Junior Web Developer",
+							"Web Developer",
 							"Javascript Lover",
+							"React Developer",
 							"Machine Learning Enthusiast",
 						]}
 						typeSpeed={50}
-						backSpeed={50}
+						backSpeed={30}
 						loop
 					/>
 				</Typography>
@@ -114,13 +126,25 @@ const Header = () => {
 				</Link>
 
 				<br />
-				<a rel="noopener noreferrer" href="http://google.com" target="_blank">
+				<a
+					rel="noopener noreferrer"
+					href="https://www.facebook.com/zsakib1"
+					target="_blank"
+				>
 					<Facebook className={classes.links} />
 				</a>
-				<a rel="noopener noreferrer" href="http://google.com" target="_blank">
+				<a
+					rel="noopener noreferrer"
+					href="https://www.linkedin.com/in/zubayerahmed"
+					target="_blank"
+				>
 					<LinkedIn className={classes.links} />
 				</a>
-				<a rel="noopener noreferrer" href="http://google.com" target="_blank">
+				<a
+					rel="noopener noreferrer"
+					href="https://github.com/rank0001"
+					target="_blank"
+				>
 					{" "}
 					<GitHub className={classes.links} />
 				</a>

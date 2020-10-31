@@ -184,12 +184,10 @@ const Contact = () => {
 						>
 							{message.success}
 						</Typography>
-						
 					</form>
 				</Grid>
-				<Particles/>
+				<Particles />
 			</Box>
-			
 		</React.Fragment>
 	);
 };

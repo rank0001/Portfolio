@@ -6,7 +6,7 @@ import Box from "@material-ui/core/Box";
 import Typed from "react-typed";
 import { makeStyles } from "@material-ui/core/styles";
 import myself from "../images/sakib3.png";
-import { Button } from "@material-ui/core";
+import { Button, Link } from "@material-ui/core";
 import Projects from "./Projects";
 import Facebook from "@material-ui/icons/Facebook";
 import LinkedIn from "@material-ui/icons/LinkedIn";
@@ -19,6 +19,9 @@ const useStyles = makeStyles((theme) => ({
 		color: "tan",
 		fontSize: 40,
 		padding: "5px",
+		"&:hover": {
+			background: "tomato",
+		},
 	},
 
 	contact: {
@@ -45,6 +48,7 @@ const useStyles = makeStyles((theme) => ({
 	subtitle: {
 		color: "tan",
 		textTransform: "uppercase",
+		marginBottom: "27px",
 	},
 	typedContainer: {
 		position: "absolute",
@@ -94,15 +98,21 @@ const Header = () => {
 					/>
 				</Typography>
 
-				<a
-					rel="noopener noreferrer"
+				<Link
 					href="https://drive.google.com/file/d/1VmTfUOm5u13o3RMmiaz1RmO5D34S20US/view?usp=sharing"
 					target="_blank"
-					style={{textDecoration:'none' }}
 				>
-				  <Button style={{ marginTop: "27px",background:'brown',color:'white'}}   variant='contained' >Download Resume</Button>
-				</a>
-				
+					<Button
+						variant="contained"
+						style={{
+							background: "#6D4C41",
+							color: "white",
+						}}
+					>
+						Download Resume
+					</Button>
+				</Link>
+
 				<br />
 				<a rel="noopener noreferrer" href="http://google.com" target="_blank">
 					<Facebook className={classes.links} />

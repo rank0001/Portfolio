@@ -17,7 +17,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import Apps from "@material-ui/icons/Apps";
 import ContactMail from "@material-ui/icons/ContactMail";
 import { makeStyles } from "@material-ui/core/styles";
-import myself from "../images/sakib3.png";
+import myself from "../images/sakibCartoon.jpg";
 import CreateIcon from "@material-ui/icons/Create";
 import InfoIcon from "@material-ui/icons/Info";
 import Footer from "../components/Footer";

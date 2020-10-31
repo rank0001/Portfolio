@@ -25,7 +25,7 @@ const Particles = () => {
             },
           },
           shape: {
-            type: "circle",
+            type: "polygon",
             stroke: {
               width: 1,
               color: "tomato",

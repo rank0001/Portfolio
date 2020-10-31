@@ -11,8 +11,14 @@ import emailjs from "emailjs-com";
 
 const useStyles = makeStyles((theme) => ({
 	contactContainer: {
-		background: "#233",
-		height: "100vh",
+		//background: "#233",
+		//height: "100vh",
+		//zIndex:'3',
+		// position: "absolute",
+		// top: "50%",
+		// left: "50%",
+		// transform: "translate(-50%,-50%)",
+		// width: "100vw",
 	},
 	heading: {
 		color: "tomato",
@@ -178,9 +184,12 @@ const Contact = () => {
 						>
 							{message.success}
 						</Typography>
+						
 					</form>
 				</Grid>
+				<Particles/>
 			</Box>
+			
 		</React.Fragment>
 	);
 };

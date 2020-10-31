@@ -47,15 +47,13 @@ export default function Blogs() {
 				<Grid container spacing={2}>
 					<Grid item>
 						<ButtonBase className={classes.image}>
-							<img
-								className={classes.img}
-								alt="complex"
-								src={blogPic}
-								onClick={() =>
-									(window.location =
-										"https://zubi-ahmed.medium.com/demystifying-recursion-ed409fe81bf6")
-								}
-							/>
+							<a
+								rel="noopener noreferrer"
+								href="https://zubi-ahmed.medium.com/demystifying-recursion-ed409fe81bf6"
+								target="_blank"
+							>
+								<img className={classes.img} alt="complex" src={blogPic} />
+							</a>
 						</ButtonBase>
 					</Grid>
 					<Grid item xs={12} sm container>

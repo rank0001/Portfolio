@@ -27,7 +27,7 @@ export default function Projects() {
 	const classes = useStyles();
 	return (
 		<React.Fragment>
-			<Grid item xs={12} sm={8} md={4}>
+			<Grid item xs={12} sm={8} md={6} lg={4}>
 				<Card className={classes.cardContainer}>
 					<CardActionArea>
 						<CardMedia
@@ -40,9 +40,8 @@ export default function Projects() {
 						<CardContent>
 							<Typography variant="h6" gutterBottom>
 								Built a full stack mern app where admin and user roles are
-								segregated.Admin can update invoices or
-								add services and user can register for services and add
-								feedbacks.
+								segregated.Admin can update invoices or add services and user
+								can register for services and add feedbacks.
 							</Typography>
 							<Typography variant="body2" color="textSecondary">
 								Reactjs, Mongodb, Redux, Firebase, ExpressJS, Javascript,
@@ -51,31 +50,33 @@ export default function Projects() {
 						</CardContent>
 					</CardActionArea>
 					<CardActions>
-						<Button
-							size="small"
-							color="primary"
-							onClick={() =>
-								(window.location =
-									"https://github.com/rank0001/Creative-Agency-Client")
-							}
+						<a
+							rel="noopener noreferrer"
+							href="https://github.com/rank0001/Creative-Agency-Client"
+							target="_blank"
+							style={{ textDecoration: "none" }}
 						>
-							Code
-						</Button>
-						<Button
-							size="small"
-							color="primary"
-							onClick={() =>
-								(window.location = "https://creative-agency-80a71.web.app/")
-							}
+							<Button size="small" color="primary">
+								Code
+							</Button>
+						</a>
+
+						<a
+							rel="noopener noreferrer"
+							href="https://creative-agency-80a71.web.app/"
+							target="_blank"
+							style={{ textDecoration: "none" }}
 						>
-							Live Demo
-						</Button>
+							<Button size="small" color="primary">
+								Demo
+							</Button>
+						</a>
 					</CardActions>
 				</Card>
 			</Grid>
 
-			<Grid item xs={12} sm={8} md={4}>
-				<Card className={classes.cardContainer}>
+			<Grid item xs={12} sm={8} md={6} lg={4}>
+				<Card className={classes.cardContainer} style={{ height: "530px" }}>
 					<CardActionArea>
 						<CardMedia
 							style={{ height: "200px" }}
@@ -96,35 +97,37 @@ export default function Projects() {
 							</Typography>
 						</CardContent>
 					</CardActionArea>
-					<CardActions>
-						<Button
-							size="small"
-							color="primary"
-							onClick={() =>
-								(window.location =
-									"https://github.com/rank0001/Voluntary-Network-ClientSide")
-							}
+					<CardActions style={{ marginTop: "20px" }}>
+						<a
+							rel="noopener noreferrer"
+							href="https://github.com/rank0001/Voluntary-Network-ClientSide"
+							target="_blank"
+							style={{ textDecoration: "none" }}
 						>
-							Code
-						</Button>
-						<Button
-							size="small"
-							color="primary"
-							onClick={() =>
-								(window.location = "https://voluntary-network.web.app/")
-							}
+							<Button size="small" color="primary">
+								Code
+							</Button>
+						</a>
+
+						<a
+							rel="noopener noreferrer"
+							href="https://voluntary-network.web.app/"
+							target="_blank"
+							style={{ textDecoration: "none" }}
 						>
-							Live Demo
-						</Button>
+							<Button size="small" color="primary">
+								Demo
+							</Button>
+						</a>
 					</CardActions>
 				</Card>
 			</Grid>
 
-			<Grid item xs={12} sm={8} md={4}>
-				<Card className={classes.cardContainer}>
+			<Grid item xs={12} sm={8} md={6} lg={4}>
+				<Card className={classes.cardContainer} style={{ height: "530px" }}>
 					<CardActionArea>
 						<CardMedia
-                        style={{ height: "200px" }}
+							style={{ height: "200px" }}
 							component="img"
 							alt="Project 3"
 							height="140"
@@ -142,34 +145,37 @@ export default function Projects() {
 							</Typography>
 						</CardContent>
 					</CardActionArea>
-					<CardActions>
-						<Button
-							size="small"
-							color="primary"
-							onClick={() =>
-								(window.location = "https://github.com/rank0001/Tour-guide")
-							}
+					<CardActions style={{ marginTop: "30px" }}>
+						<a
+							rel="noopener noreferrer"
+							href="https://github.com/rank0001/Tour-guide"
+							target="_blank"
+							style={{ textDecoration: "none" }}
 						>
-							Code
-						</Button>
-						<Button
-							size="small"
-							color="primary"
-							onClick={() =>
-								(window.location = "https://travel-guide-2fc02.web.app/")
-							}
+							<Button size="small" color="primary">
+								Code
+							</Button>
+						</a>
+
+						<a
+							rel="noopener noreferrer"
+							href="https://travel-guide-2fc02.web.app/"
+							target="_blank"
+							style={{ textDecoration: "none" }}
 						>
-							Demo
-						</Button>
+							<Button size="small" color="primary">
+								Demo
+							</Button>
+						</a>
 					</CardActions>
 				</Card>
 			</Grid>
 
-			<Grid item xs={12} sm={8} md={4}>
+			<Grid item xs={12} sm={8} md={6} lg={4}>
 				<Card className={classes.cardContainer}>
 					<CardActionArea>
 						<CardMedia
-                        style={{ height: "200px" }}
+							style={{ height: "200px" }}
 							component="img"
 							alt="Project 4"
 							height="140"
@@ -187,33 +193,36 @@ export default function Projects() {
 						</CardContent>
 					</CardActionArea>
 					<CardActions>
-						<Button
-							size="small"
-							color="primary"
-							onClick={() =>
-								(window.location = "https://github.com/rank0001/React-Routes")
-							}
+						<a
+							rel="noopener noreferrer"
+							href="https://github.com/rank0001/React-Routes"
+							target="_blank"
+							style={{ textDecoration: "none" }}
 						>
-							Code
-						</Button>
-						<Button
-							size="small"
-							color="primary"
-							onClick={() =>
-								(window.location = "https://postroutes.netlify.app/")
-							}
+							<Button size="small" color="primary">
+								Code
+							</Button>
+						</a>
+
+						<a
+							rel="noopener noreferrer"
+							href="https://postroutes.netlify.app/"
+							target="_blank"
+							style={{ textDecoration: "none" }}
 						>
-							Demo
-						</Button>
+							<Button size="small" color="primary">
+								Demo
+							</Button>
+						</a>
 					</CardActions>
 				</Card>
 			</Grid>
 
-			<Grid item xs={12} sm={8} md={4}>
-				<Card className={classes.cardContainer}>
+			<Grid item xs={12} sm={8} md={6} lg={4}>
+				<Card className={classes.cardContainer} style={{ height: "480px" }}>
 					<CardActionArea>
 						<CardMedia
-                           style={{ height: "200px" }}
+							style={{ height: "200px" }}
 							component="img"
 							alt="Project 5"
 							height="140"
@@ -229,36 +238,37 @@ export default function Projects() {
 							</Typography>
 						</CardContent>
 					</CardActionArea>
-					<CardActions>
-						<Button
-							size="small"
-							color="primary"
-							onClick={() =>
-								(window.location =
-									"https://github.com/rank0001/React-Spa-Assignment")
-							}
+					<CardActions style={{ marginTop: "20px" }}>
+						<a
+							rel="noopener noreferrer"
+							href="https://github.com/rank0001/React-Spa-Assignment"
+							target="_blank"
+							style={{ textDecoration: "none" }}
 						>
-							Code
-						</Button>
-						<Button
-							size="small"
-							color="primary"
-							onClick={() =>
-								(window.location =
-									"https://pedantic-neumann-e61a3b.netlify.app/#features")
-							}
+							<Button size="small" color="primary">
+								Code
+							</Button>
+						</a>
+
+						<a
+							rel="noopener noreferrer"
+							href="https://pedantic-neumann-e61a3b.netlify.app/#features"
+							target="_blank"
+							style={{ textDecoration: "none" }}
 						>
-							Demo
-						</Button>
+							<Button size="small" color="primary">
+								Demo
+							</Button>
+						</a>
 					</CardActions>
 				</Card>
 			</Grid>
 
-			<Grid item xs={12} sm={8} md={4}>
-				<Card className={classes.cardContainer}>
+			<Grid item xs={12} sm={8} md={6} lg={4}>
+				<Card className={classes.cardContainer} style={{ height: "480px" }}>
 					<CardActionArea>
 						<CardMedia
-                        style={{ height: "200px" }}
+							style={{ height: "200px" }}
 							component="img"
 							alt="Project 6"
 							height="140"
@@ -275,25 +285,28 @@ export default function Projects() {
 							</Typography>
 						</CardContent>
 					</CardActionArea>
-					<CardActions>
-						<Button
-							size="small"
-							color="primary"
-							onClick={() =>
-								(window.location = "https://github.com/rank0001/api-assignment")
-							}
+					<CardActions style={{ marginTop: "12px" }}>
+						<a
+							rel="noopener noreferrer"
+							href="https://github.com/rank0001/api-assignment"
+							target="_blank"
+							style={{ textDecoration: "none" }}
 						>
-							Code
-						</Button>
-						<Button
-							size="small"
-							color="primary"
-							onClick={() =>
-								(window.location = "https://rank0001.github.io/api-assignment/")
-							}
+							<Button size="small" color="primary">
+								Code
+							</Button>
+						</a>
+
+						<a
+							rel="noopener noreferrer"
+							href="https://rank0001.github.io/api-assignment/"
+							target="_blank"
+							style={{ textDecoration: "none" }}
 						>
-							Demo
-						</Button>
+							<Button size="small" color="primary">
+								Demo
+							</Button>
+						</a>
 					</CardActions>
 				</Card>
 			</Grid>

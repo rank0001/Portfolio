@@ -4,13 +4,10 @@ import Avatar from "@material-ui/core/Avatar";
 import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 import Typed from "react-typed";
-import { Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import myself from "../images/sakib3.png";
-import { BottomNavigation, Button } from "@material-ui/core";
+import { Button } from "@material-ui/core";
 import Projects from "./Projects";
-import Footer from "./Footer";
-import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
 import Facebook from "@material-ui/icons/Facebook";
 import LinkedIn from "@material-ui/icons/LinkedIn";
 import GitHub from "@material-ui/icons/GitHub";
@@ -97,17 +94,15 @@ const Header = () => {
 					/>
 				</Typography>
 
-				<Button
-					variant="contained"
-					color="primary"
-					onClick={() =>
-						(window.location =
-							"https://drive.google.com/file/d/1VmTfUOm5u13o3RMmiaz1RmO5D34S20US/view?usp=sharing")
-					}
-					style={{ marginTop: "10px" }}
+				<a
+					rel="noopener noreferrer"
+					href="https://drive.google.com/file/d/1VmTfUOm5u13o3RMmiaz1RmO5D34S20US/view?usp=sharing"
+					target="_blank"
+					style={{textDecoration:'none' }}
 				>
-					Download Resume
-				</Button>
+				  <Button style={{ marginTop: "27px",background:'brown',color:'white'}}   variant='contained' >Download Resume</Button>
+				</a>
+				
 				<br />
 				<a rel="noopener noreferrer" href="http://google.com" target="_blank">
 					<Facebook className={classes.links} />

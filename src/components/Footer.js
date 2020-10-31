@@ -9,8 +9,10 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 const useStyles = makeStyles({
   bottomNavContainer: {
     background: "#222",
+   
   },
   root: {
+     padding:'15px',
     "& .MuiSvgIcon-root": {
       fill: "tan",
       "&:hover": {
@@ -26,10 +28,9 @@ const Footer = () => {
 
   return (
     <BottomNavigation className={classes.bottomNavContainer}>
-      <BottomNavigationAction icon={<Facebook />} className={classes.root} onClick={()=>window.location='https://www.facebook.com/zsakib1'}/>
-      <BottomNavigationAction icon={<LinkedInIcon />} className={classes.root} onClick={()=>window.location='https://www.linkedin.com/in/zubayerahmed'} />
-      <BottomNavigationAction icon={<GitHubIcon />} className={classes.root} 
-      onClick={()=>window.location='https://github.com/rank0001'} />
+      <a rel="noopener noreferrer"  className={classes.root} target='_blank'  href='https://www.facebook.com/zsakib1'><Facebook/> </a>
+       <a rel="noopener noreferrer"  className={classes.root} target='_blank'  href='https://www.linkedin.com/in/zubayerahmed'><LinkedInIcon/> </a>
+        <a rel="noopener noreferrer"  className={classes.root} target='_blank'  href='https://github.com/rank0001'><GitHubIcon/> </a>
     </BottomNavigation>
   );
 };

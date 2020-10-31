@@ -4,9 +4,10 @@ import Avatar from "@material-ui/core/Avatar";
 import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 import Typed from "react-typed";
+import { Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import myself from "../images/sakib3.png";
-import { BottomNavigation, Button, Link } from "@material-ui/core";
+import { BottomNavigation, Button } from "@material-ui/core";
 import Projects from "./Projects";
 import Footer from "./Footer";
 import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
@@ -25,12 +26,12 @@ const useStyles = makeStyles((theme) => ({
 
 	contact: {
 		marginTop: "1800px",
-		 position:'absolute',
-		 //top: "50%",
+		position: "absolute",
+		//top: "50%",
 		left: "15%",
-		width:'75vw',
-		zIndex:'1',
-		height:'100vh',
+		width: "75vw",
+		zIndex: "1",
+		height: "100vh",
 		[theme.breakpoints.down("sm")]: {
 			marginTop: "4200px",
 		},
@@ -108,9 +109,16 @@ const Header = () => {
 					Download Resume
 				</Button>
 				<br />
-				<Facebook className={classes.links} />
-				<LinkedIn className={classes.links} />
-				<GitHub className={classes.links} />
+				<a rel="noopener noreferrer" href="http://google.com" target="_blank">
+					<Facebook className={classes.links} />
+				</a>
+				<a rel="noopener noreferrer" href="http://google.com" target="_blank">
+					<LinkedIn className={classes.links} />
+				</a>
+				<a rel="noopener noreferrer" href="http://google.com" target="_blank">
+					{" "}
+					<GitHub className={classes.links} />
+				</a>
 			</Box>
 
 			<Box style={{ marginTop: "650px" }} className={classes.gridContainer}>

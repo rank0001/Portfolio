@@ -62,12 +62,12 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const menuItems = [
-	{ listIcon: <Home/>, listText: "Home", listPath: "/" },
-	{ listIcon: <AssignmentInd/>, listText: "Resume", listPath: "/resume" },
-	{ listIcon: <Apps/>, listText: "Portfolio", listPath: "/portfolio" },
-	{ listIcon: <ContactMail/>, listText: "Contact", listPath: "/contact" },
-	{ listIcon: <CreateIcon/>, listText: "Articles", listPath: "/blogs" },
-	{ listIcon: <InfoIcon/>, listText: "About Myself", listPath: "/about" },
+	{ listIcon: <Home />, listText: "Home", listPath: "/" },
+	{ listIcon: <AssignmentInd />, listText: "Resume", listPath: "/resume" },
+	{ listIcon: <Apps />, listText: "Portfolio", listPath: "/portfolio" },
+	{ listIcon: <ContactMail />, listText: "Contact", listPath: "/contact" },
+	{ listIcon: <CreateIcon />, listText: "Articles", listPath: "/blogs" },
+	{ listIcon: <InfoIcon />, listText: "About Myself", listPath: "/about" },
 ];
 
 const Navbar = () => {
@@ -113,112 +113,146 @@ const Navbar = () => {
 
 						{location.pathname === "/" ? (
 							<Typography
+								component={Link}
+								to="/"
 								variant="h6"
 								className={classes.title}
-								onClick={() => history.push("/")}
-								style={{ borderBottom: "2px solid tomato" }}
+								style={{
+									borderBottom: "2px solid tomato",
+									textDecoration: "none",
+								}}
 							>
 								Home
 							</Typography>
 						) : (
 							<Typography
+								component={Link}
+								to="/"
 								variant="h6"
 								className={classes.title}
-								onClick={() => history.push("/")}
+								style={{ textDecoration: "none" }}
 							>
 								Home
 							</Typography>
 						)}
 
-            {location.pathname === "/resume" ? (
+						{location.pathname === "/resume" ? (
 							<Typography
+								component={Link}
+								to="/resume"
 								variant="h6"
 								className={classes.title}
-								style={{ borderBottom: "2px solid tomato" }}
-								onClick={() => history.push("/resume")}
+								style={{
+									borderBottom: "2px solid tomato",
+									textDecoration: "none",
+								}}
 							>
 								Resume
 							</Typography>
 						) : (
 							<Typography
+								component={Link}
+								to="/resume"
 								variant="h6"
+								style={{ textDecoration: "none" }}
 								className={classes.title}
-								onClick={() => history.push("/resume")}
 							>
 								Resume
 							</Typography>
 						)}
 						{location.pathname === "/portfolio" ? (
 							<Typography
+								component={Link}
+								to="/portfolio"
 								variant="h6"
 								className={classes.title}
-								style={{ borderBottom: "2px solid tomato" }}
-								onClick={() => history.push("/portfolio")}
+								style={{
+									borderBottom: "2px solid tomato",
+									textDecoration: "none",
+								}}
 							>
 								Projects
 							</Typography>
 						) : (
 							<Typography
+								component={Link}
+								to="/portfolio"
 								variant="h6"
 								className={classes.title}
-								onClick={() => history.push("/portfolio")}
+								style={{ textDecoration: "none" }}
 							>
 								Projects
 							</Typography>
 						)}
 
-            {location.pathname === "/about" ? (
+						{location.pathname === "/about" ? (
 							<Typography
+              	component={Link}
+								to="/about"
 								variant="h6"
 								className={classes.title}
-								style={{ borderBottom: "2px solid tomato" }}
+								style={{ borderBottom: "2px solid tomato",textDecoration: "none"  }}
 								onClick={() => history.push("/about")}
 							>
 								About
 							</Typography>
 						) : (
 							<Typography
+              	component={Link}
+								to="/about"
 								variant="h6"
 								className={classes.title}
 								onClick={() => history.push("/about")}
+                		style={{ textDecoration: "none" }}
 							>
 								About
 							</Typography>
 						)}
-						
-            {location.pathname === "/contact" ? (
+
+						{location.pathname === "/contact" ? (
 							<Typography
+              	component={Link}
+								to="/contact"
 								variant="h6"
 								className={classes.title}
-								style={{ borderBottom: "2px solid tomato" }}
+								style={{ borderBottom: "2px solid tomato",textDecoration: "none" }}
 								onClick={() => history.push("/contact")}
 							>
 								Contact
 							</Typography>
 						) : (
 							<Typography
+              	component={Link}
+								to="/contact"
 								variant="h6"
 								className={classes.title}
 								onClick={() => history.push("/contact")}
+                style={{ textDecoration: "none" }}
 							>
 								Contact
 							</Typography>
 						)}
-						
-            {location.pathname === "/blogs" ? (
+
+						{location.pathname === "/blogs" ? (
 							<Typography
+              	component={Link}
+								to="/blogs"
 								variant="h6"
 								className={classes.title}
-								style={{ borderBottom: "2px solid tomato" }}
+								style={{ borderBottom: "2px solid tomato",textDecoration: "none"  }}
 								onClick={() => history.push("/blogs")}
+              
 							>
 								Articles
 							</Typography>
 						) : (
 							<Typography
+              	component={Link}
+								to="/blogs"
 								variant="h6"
 								className={classes.title}
 								onClick={() => history.push("/blogs")}
+                style={{ textDecoration: "none" }}
 							>
 								Articles
 							</Typography>

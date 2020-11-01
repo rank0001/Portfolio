@@ -1,6 +1,6 @@
 # Portfolio Website
 
-![a screenshot of the portfolio website]("src/images/pro1.png")
+![a screenshot of the portfolio website](src/images/portfolio.png)
 
 Live Link: [Portfolio](https://zubayerahmed-fe761.web.app/ "Portfolio")  
 

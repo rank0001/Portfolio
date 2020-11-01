@@ -188,7 +188,7 @@ export default function Projects() {
 								clicking of different posts.
 							</Typography>
 							<Typography variant="body2" color="textSecondary">
-								Reactjs,Redux,Javascript, NodeJS,Material-UI,netlify
+								Reactjs,Javascript, NodeJS,Material-UI,netlify
 							</Typography>
 						</CardContent>
 					</CardActionArea>
